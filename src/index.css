@@ -5,9 +5,96 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#common_head {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#Title {
+  font-size: 80px;
+  margin-left: 20px;
+  margin-top: 4px;
+}
+
+#Logo {
+  height: 150px;
+  width: 150px;
+}
+
+.bi {
+  font-size: 50px;
+  margin-left: auto; /* Pushes the icons to the rightmost side */
+  margin-top: 4px;
+  cursor: pointer; /* Optional: Add a pointer cursor */
+}
+
+.bi-github {
+  margin-right: 10px;
+  margin-left: auto; /* Reduce the margin to bring it closer to the sun icon */
+}
+
+.bi-brightness-high-fill {
+  margin-right: 50px; /* Add some spacing to the right of the sun icon */
+}
+
+#github_logo {
+  font-size: 50px;
+  margin-left: auto; /* Pushes the icons to the rightmost side */
+  margin-top: 4px;
+  margin-right: -600px;
+  cursor: pointer;
+}
+
+/* Media query for tablets (screen width <= 768px) */
+@media (max-width: 768px) {
+  #Title {
+    font-size: 60px; /* Reduce title size */
+  }
+
+  #Logo {
+    height: 100px; /* Reduce logo size */
+    width: 100px;
+  }
+
+  .bi {
+    font-size: 40px; /* Reduce icon size */
+  }
+
+  .bi-github {
+    margin-right: 5px; /* Adjust spacing */
+  }
+
+  .bi-brightness-high-fill {
+    margin-right: 20px; /* Adjust spacing */
+  }
+}
+
+/* Media query for mobile devices (screen width <= 480px) */
+@media (max-width: 480px) {
+  #Title {
+    font-size: 40px; /* Further reduce title size */
+    margin-left: 10px;
+  }
+
+  #Logo {
+    height: 80px; /* Further reduce logo size */
+    width: 80px;
+  }
+
+  .bi {
+    font-size: 30px; /* Further reduce icon size */
+  }
+
+  .bi-github {
+    margin-right: 5px; /* Adjust spacing */
+  }
+
+  .bi-brightness-high-fill {
+    margin-right: 10px; /* Adjust spacing */
+  }
 }

@@ -1,0 +1,149 @@
+.homepage {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+
+.main-content {
+  margin-top: 20px;
+}
+
+.text-box {
+  margin-bottom: 20px;
+  font-size: 30px; /* Removed duplicate font-size */
+  text-align: center;
+}
+
+.visualizations {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four buttons per row */
+  gap: 15px;
+}
+
+.visualization {
+  background-color: #000000;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: white 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  height: 100px;
+}
+
+.visualization:hover {
+  background-color: #ffffff; /* Slightly darker green on hover */
+  color: black;
+}
+
+#common_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure proper spacing between elements */
+  width: 100%;
+}
+
+#Title {
+  font-size: 80px;
+  margin-left: 20px;
+  margin-top: 4px;
+}
+
+#Logo {
+  height: 150px;
+  width: 150px;
+}
+
+.bi {
+  font-size: 50px;
+  cursor: pointer; /* Optional: Add a pointer cursor */
+}
+
+.bi-github {
+  margin-right: 10px; /* Adjust spacing */
+  font-size: 50px; /* Ensure the GitHub logo remains visible */
+}
+
+.bi-brightness-high-fill {
+  margin-right: 50px; /* Add some spacing to the right of the sun icon */
+}
+
+#github_logo {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+/* Media query for tablets (screen width <= 768px) */
+@media (max-width: 768px) {
+  .visualizations {
+    grid-template-columns: repeat(2, 1fr); /* Two buttons per row */
+  }
+
+  .text-box {
+    font-size: 24px; /* Smaller font size for text */
+  }
+
+  #Title {
+    font-size: 60px; /* Reduce title size */
+  }
+
+  #Logo {
+    height: 100px; /* Reduce logo size */
+    width: 100px;
+  }
+
+  .bi {
+    font-size: 40px; /* Reduce icon size */
+  }
+
+  .bi-github {
+    margin-right: 5px; /* Adjust spacing */
+    font-size: 40px; /* Ensure the GitHub logo remains visible */
+  }
+
+  .bi-brightness-high-fill {
+    margin-right: 20px; /* Adjust spacing */
+  }
+}
+
+/* Media query for mobile devices (screen width <= 480px) */
+@media (max-width: 480px) {
+  .visualizations {
+    grid-template-columns: 1fr; /* One button per row */
+  }
+
+  .text-box {
+    font-size: 20px; /* Even smaller font size for text */
+  }
+
+  .visualization {
+    font-size: 14px; /* Smaller font size for buttons */
+    height: 80px; /* Reduce button height */
+  }
+
+  #Title {
+    font-size: 40px; /* Further reduce title size */
+    margin-left: 10px;
+  }
+
+  #Logo {
+    height: 80px; /* Further reduce logo size */
+    width: 80px;
+  }
+
+  .bi {
+    font-size: 30px; /* Further reduce icon size */
+  }
+
+  .bi-github {
+    margin-right: 5px; /* Adjust spacing */
+    font-size: 30px; /* Ensure the GitHub logo remains visible */
+  }
+
+  .bi-brightness-high-fill {
+    margin-right: 10px; /* Adjust spacing */
+  }
+}
